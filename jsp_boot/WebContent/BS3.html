@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-6" style="background-color:tomato">aaa</div> <!-- col-6 BS3에서는 이거 안먹힘 -->
+				<div class="col-6" style="background-color:skyblue">bbb</div>
+			</div>
+			
+			<pre> <!-- 테두리가 있는 상태로 출력, 4에서는 테두리 없음 -->
+				학교종이 땡땡땡
+				어서모이자!!
+			</pre>
+			
+			<hr />
+			
+			<p>기본문자열</p>
+			<p class="font-weight-bold">굵은문자열</p>
+			<p class="font-italic">길어진 문자열</p>
+			<p class="font-weight-light">가늘어진 문자열</p>
+			<p class="font-weight-nomal">기본문자열</p>
+			
+			<hr />
+			<!-- 3에서는 이것만 먹힘 나머지는 안먹힘 -->
+			<p class="text-left">문자열</p>
+			<p class="text-center">문자열</p>
+			<p class="text-right">문자열</p>
+			
+			<hr />
+			
+			<p class="text-sm-center">문자열</p> <!-- 가운데 있다가 크기 줄어드면 디폴트로 왼쪽으로 붙음 -->
+			<p class="text-md-center">문자열</p>
+			<p class="text-lg-center">문자열</p>
+			<p class="text-xl-center">문자열</p>
+			
+			<hr />
+			
+			<p style="width:200px; border:1px solid black">a bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiiii</p>
+			<p style="width:200px; border:1px solid black" class="text-justify">a bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiiii</p>
+			<!-- 박스 크기에 맞춰서 글자 간격을 맞춤 -->
+			
+			<hr />
+			
+			<!-- 리스트들이 점도 없앤 상태에서 블록이 아닌 인라인이 됨 -->
+			<ul class="list-inline">
+				<li>list1</li>
+				<li>list2</li>
+				<li>list3</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<style>
+			.container {
+				background-color:powderblue;
+				height:200px;
+				display:flex; /* 블럭 태그든 뭐든 수평 정렬시키는 것 */ /* 디폴트 값 flex-direction:row; */ /* 부모한테 줘야함 */
+			/*	flex-direction:row-reverse; /* 반대로 정렬 */
+			/*	flex-direction:column-reverse;*/
+			}
+			.item {
+				background-color:tomato;
+				color:white;
+				border:1px solid white;
+			/*	flex-grow:1; /* item들이 같은 크기로 됨. */ /* flex-grow:0; 으로 하면 폰트크기로 됨. 보통 폰트 크기 16px, 웹브라우저가 잡아줌. */
+			}
+			.item:nth-child(1) {
+				flex-basis:200px;
+				flex-shrink:1; /* 값을 다르게 주면 숫자 높은 쪽이 더 먼저 줄어듦. */
+			}
+			.item:nth-child(2) {
+				/* flex-basis:200px; /* 자식한테 줘야 함. 다이렉트로 주는 법 */
+				/* flex-grow:2; */
+				flex-basis:300px; /* 화면을 줄여도 지정해놓은 값은 안 줄어들이게 하고 싶을 때 => 이렇게 하면 화면 줄일 때 같이 줄어듦 */
+				flex-shrink:2; /* 0 을 사용해야  화면 줄여도 안 줄어듦. 1 넣으면 줄어듦. */
+			} 
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<script>
+			var objBook = {
+				title : "Nature of Code",
+				cost : "30000원",
+				writer : "다니엘 쉬프만",
+				ISBN : "9788968481901",
+				pageNum : "620페이지"
+			};
+			
+			console.log("objBook.title : " + objBook.title);
+			console.log("objBook.cost : " + objBook.cost);
+			console.log("objBook.writer : " + objBook.writer);
+			console.log("objBook.ISBN : " + objBook.ISBN);
+			console.log("objBook.pageNum : " + objBook.pageNum);
+			
+			console.log("==================================");
+			
+			function Product(name, weight, cost) {
+				
+				this.name = name;
+				this.weight = weight;
+				this.cost = cost;
+				this.calculate = function(weight) {
+					return (weight/100) * this.cost;
+				};
+			};
+			
+			var product = new Product("돼지삼겹살", 100, 1690);
+			
+			console.log(product.calculate(200) + "원 입니다.");
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

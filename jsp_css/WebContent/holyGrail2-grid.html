@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<style>
+			#container {
+				max-width:1000px;
+				display:grid;
+				grid-template-columns:20% 1fr 15%;
+				grid-template-rows:60px 1fr 60px;
+				
+				grid-tamplate-areas:
+				"header header header"
+				"nav article ads"
+				"footer footer footer";
+				
+				grid-gap:10px;
+				height:100vh; /* view height 모바일이나 디스플레이장치의 크기에 맞게끔 해라 하는 것이 vh이다. */
+				margin:0 auto;
+			}
+			
+			@media (max-width:600px) {
+				#container {
+				max-width:900px;
+				min-width:100vh;
+				display:grid;
+				grid-template-columns:100%;
+				grid-template-rows:auto auto 1fr auto auto;
+				
+				grid-tamplate-areas:
+				"header"
+				"nav"
+				"article"
+				"ads"
+				"footer";
+				
+				margin:0 auto;
+				}
+			}
+			
+			header, footer, article, nav, #siteAds {
+				background-color:gold;
+				padding:20px;
+			}			
+			
+			#pageHeader {
+				grid-area:header; /* grid-area 영역 이름을 설정 */
+			}
+			
+			#pageFooter {
+				grid-area:footer;
+			}
+			
+			#mainArticle {
+				grid-area:article;
+			}
+			
+			#mainNav {
+				grid-area:nav;
+			}
+			
+			#siteAds {
+				grid-area:ads;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header id="pageHeader">Header</header>
+			<article id="mainArticle">Article</article>
+			<nav id="mainNav">Nav</nav>
+			<div id="siteAds">Ads</div>
+			<footer id="pageFooter">Footer</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- grid는 한정적으로 지원하기 때문에, 낮은 버젼 크롬이나, 대부분의 IE에서 지원안해~~~ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<style>
+		.wrapper > div {
+			background-color: orange;
+			border: 1px solid black;
+		}
+
+		.wrapper > div:nth-child(odd) {
+			background-color: indianred;
+		}
+
+		/* grid-template-columns 행 */
+		/* grid-template-rows 열 */
+		
+		.wrapper {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows:100px; /* grid-auto-rows 이미 설정된 프레임보다 더 많은 프레임이 있을 경우 적용됨. */
+		 /* grid-auto-rows: minmax(50px, auto); */
+			grid-gap: 5px;
+		}
+		
+		.div1 {
+			grid-column:1/3; /* 1에서 3까지 밀림. */
+			grid-row:1/3;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+		<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidem animi tempore aliquam voluptas assumenda ipsa voluptates. Illum facere dolor eos, corporis nobis, accusamus velit, similique cum -->
+			<div class="div1">1</div>
+			<div class="div2">2</div>
+			<div class="div3">3</div>
+			<div class="div4">4</div>
+			<div class="div5">5</div>
+			<div class="div6">6</div>
+			<div class="div7">7</div>
+			<div class="div8">8</div>
+	</div>
+	</body>
+</html>

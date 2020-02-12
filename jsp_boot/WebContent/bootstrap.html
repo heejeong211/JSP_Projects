@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		<!-- meta태그는 검색어 키워드를 노출시키 는 것 -->
+		<meta charset="utf-8"> <!-- 웹서버가 알아먹을 수 있도록 -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 해당 디바이스에 넓이를 맞춰주고, 확대는 기본적으로 1로 줘라(반응형 디폴트) -->
+  		
+  		<!-- 순서 중요 -->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- 이것을 cdn이라고 표현함. -->
+  		<!-- rel 레퍼런스, css파일 가져오는 것, 자바로치면 import하는 것(style 태그) --> <!-- min 으로 축약하는 이유 인터넷으로 다운 받기위해서, bootstrap.min.css 파일의 위치는 웹브라우저의  캐쉬공간에 다운로드 받아져 있음. -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- 자바로 치면 import하는 것 (script 태그) -->
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container"> <!-- class="container" 때문에 style이 먹힘. -->
+			<h1> my first Bootstrap <small> 페이지(36px) </small></h1>
+			<h2> my first Bootstrap <small> 페이지(30px) </small></h2>
+			<h3> my first Bootstrap <small> 페이지(24px) </small></h3>
+			<h4> my first Bootstrap <small> 페이지(18px) </small></h4>
+			<h5> my first Bootstrap <small> 페이지(14px) </small></h5>
+			<h6> my first Bootstrap <small> 페이지(12px) </small></h6>
+			<p> This is some <mark> text. </mark></p>
+			<p> The <abbr title="World Health Organization"> WHO </abbr> was founded in 1948 </p>
+			<blockquote>
+				<p> This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. </p>
+				<footer> From WWF's website </footer>
+			</blockquote>
+		</div>
+		
+		<div class="container-fluid"> 
+			<h1> my first Bootstrap 페이지 </h1>
+			<p> This is some text. </p>
+		</div>
+	</body>
+</html>

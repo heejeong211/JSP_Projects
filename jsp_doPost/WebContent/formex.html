@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<form action="FormEx" method="post"> <!-- FormEx로 가라, 그리고 doPost메소드를 타라 -->
+			이름 : <input type="text" name="name" size="10"><br/>
+			ID : <input type="text" name="id" size="10"><br/>
+			PASSWORD : <input type="password" name="pw" size="10"><br/><!-- type을 password라고 하면 입력할때 내가 입력한 값이 안보임. -->
+			
+			<!-- checkbox는 중복 체크 가능, name이 같아야 같이 묶을 수 있음. -->
+			<input type="checkbox" name="hobby" value="cook">요리
+			<input type="checkbox" name="hobby" value="run">조깅
+			<input type="checkbox" name="hobby" value="swim">수영
+			<input type="checkbox" name="hobby" value="sleep">취침<br/>
+			
+			<!-- 옵션이라서 radio 사용(한개 밖에 체크 안됨) -->
+			<input type="radio" name="major" value="kor">국어
+			<input type="radio" name="major" value="eng" checked="checked">영어
+			<input type="radio" name="major" value="mat">수학
+			<input type="radio" name="major" value="des">디자인<br/>
+			
+			<!-- 하단 바 같은거 나와서 선택하는 것 -->
+			<select name="protocol">
+				<option value="http">http</option>
+				<option value="ftp" selected="selected">ftp</option>
+				<option value="smtp">smtp</option>
+				<option value="pop">pop</option>
+			</select><br/>
+			
+			<!-- 얘네들은 버튼임. 하나는 서버로 전송하는 전송버튼, 하나는 초기화 버튼 -->
+			<input type="submit" value="전송">
+			<input type="reset" value="초기화">
+		</form>
+	</body>
+</html>
